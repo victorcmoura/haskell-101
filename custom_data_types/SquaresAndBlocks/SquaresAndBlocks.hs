@@ -1,3 +1,4 @@
+module SquaresAndBlocks(Square, Block, squareSideLength, squareArea, blockSquareList, blockLength, squareListArea, blockArea, s10, s11, s12, s13, lstSquares, b1) where
 
 data Square = Square {
     sideLength :: Float
@@ -36,19 +37,3 @@ s13 = Square {sideLength = 13.0}
 lstSquares = [s10, s11, s12, s13]
 
 b1 = Block {children = lstSquares}
-
-main = do
-    putStrLn("Getting s10 sideLength:")
-    print(squareSideLength s10)
-
-    putStrLn("Getting s10 area:")
-    print(squareArea s10)
-
-    putStrLn("Getting b1 blockSquareList:")
-    print(blockSquareList b1)
-
-    putStrLn("Getting b1 blockLength:")
-    print(blockLength b1)
-
-    putStrLn("Getting b1 total area:")
-    print(blockArea b1)
