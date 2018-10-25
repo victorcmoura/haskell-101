@@ -1,4 +1,5 @@
 apnd_to_head x lst = x : lst
+
 apnd_to_tail x lst = lst ++ [x]
 
 prnt_head_to_tail [] = do
